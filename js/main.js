@@ -1,19 +1,7 @@
-//=========== Active sidebar dashboard =============
-const currentLocationDashboard = location.href;
-const menuItemDashboard = document.querySelectorAll(
-  ".sidebar .nav-item .nav-link"
-);
-const menuChildDashboard = document.querySelectorAll(
-  ".sidebar .nav-pills .nav-item ul li .nav-link"
-);
-const menuLengthDashboard = menuItemDashboard.length;
-for (let i = 0; i < menuLengthDashboard; i++) {
-  if (menuItemDashboard[i].href === currentLocationDashboard) {
-    menuItemDashboard[i].className = "nav-link active";
-    // menuChildDashboard[i].parentElement.parentElement.className =
-    //   "flex-column collapse show";
-  }
-}
+// var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+// var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+//   return new bootstrap.Tooltip(tooltipTriggerEl)
+// })
 //=========== Active sidebar dashboard =============
 
 //=========== sidebar toggle =============
@@ -62,8 +50,7 @@ for (let i = 0; i < menuLengthDashboard; i++) {
 
 
 
-
-
+	
 
 
 
@@ -94,7 +81,11 @@ for (let i = 0; i < menuLengthDashboard; i++) {
 //=========== sidebar toggle =============
 const sideBar = document.querySelector(".sidebar");
 const toggler = document.querySelector(".menu");
+const togglerMobile = document.querySelector(".menuMobile");
 toggler.addEventListener("click", function () {
+  sideBar.classList.toggle("open");
+});
+togglerMobile.addEventListener("click", function () {
   sideBar.classList.toggle("open");
 });
 //=========== sidebar toggle =============
@@ -116,9 +107,5 @@ $(document).ready(function () {
     $(".sidebar.open .nav-pills .nav-item ul").removeClass("show");
   });
 });
-
-	
-
-
 
 

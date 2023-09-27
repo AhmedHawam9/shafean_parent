@@ -6,6 +6,7 @@
 
     <!-- ? Main CSS -->
     <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="main-scss/main.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <!-- ? Custom CSS -->
@@ -25,119 +26,395 @@
     <script src="js/dataTables.bootstrap5.min.js"></script>
     <!-- ? Custom JavaScript -->
 
-<!--  -->
-<link rel="stylesheet" href="css/bootstrap-select.min.css" />
-<link rel="stylesheet" href="main-scss/main.min.css" />
-<link rel="stylesheet" href="css/responsive.css" />
-<!--  -->
     <title>layout</title>
   </head>
   <body>
     <!---------------------- finish loader -------------------------------------------->
 
-    <main class="d-flex sidemobile p-0">
-        <!---------------------- start sidebar -------------------------------------------->
-  
-        <section class="sidebar open">
-          <ul
-            class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
-            id="menu"
-          >
-            <li class="nav-item">
-              <a href="main.html" class="nav-link align-middle">
-                <img src="img/home.png" alt="icon" />
-                <span>الرئيسية</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="projects.html" class="nav-link align-middle">
-                <img src="img/project.png" alt="icon" />
-                <span>المشاريع</span>
-              </a>
-            </li>
-  
-            <li class="nav-item">
-              <a href="tasks.html" class="nav-link align-middle">
-                <img src="img/task.png" alt="icon" />
-                <span> المهام</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="table.html" class="nav-link align-middle">
-                <img src="img/Frame.png" alt="icon" />
-                <span> سجل الحضور والانصراف</span>
-              </a>
-            </li>
-  
-            <li class="nav-item">
-              <a href="teams.html" class="nav-link align-middle">
-                <img src="img/group.png" alt="icon" />
-                <span> الفرق</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="all-employee.html" class="nav-link align-middle">
-                <img src="img/staf.png" alt="icon" />
-                <span> الموظفين</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="seting.html" class="nav-link align-middle">
-                <img src="img/seting.png" alt="icon" />
-                <span> الاعدادات</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <!---------------------- end sidebar -------------------------------------------->
-        <!---------------------- start main content -------------------------------------------->
-  
-        <section class="index_cards">
-          <!---------------------- start nav -------------------------------------------->
-          <nav class="nav_top navbar">
-            <div class="container">
-              <div class="menu">
-                <i class="bi bi-list"></i>
-                <!-- <h4>المشاريع</h4> -->
+    <!-- <main class="d-flex sidemobile p-0"> -->
+
+    <!-- ======= Start Sidebar ======= -->
+    <section class="sidebar open">
+      <img src="img/shafia.png" />
+      <ul
+        class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+        id="menu"
+      >
+        <li class="nav-item">
+          <a href="layout.html" class="nav-link align-middle">
+            <i class="fa-solid fa-house"></i>
+            <span>الرئيسية</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link align-middle">
+            <i class="fa-solid fa-video"></i>
+            <span>المقرأة</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link align-middle">
+            <i class="fa-solid fa-people-group"></i>
+            <span>المجموعات</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link align-middle">
+            <i class="fa-solid fa-list-check"></i>
+            <span>الانجازات</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link align-middle">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>الاختبارات</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link align-middle">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>نبذة عنا</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link align-middle">
+            <i class="fa-solid fa-newspaper"></i>
+            <span>الاخبار</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link align-middle">
+            <i class="fa-regular fa-message"></i>
+            <span>تواصل معنا</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- ======= end Sidebar ======= -->
+
+    <!-- ======= Main ======= -->
+    <section class="index_cards">
+      <!-- ======= Start navbar ======= -->
+      <nav class="navbar lets">
+        <div class="menuu">
+          <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="beell">
+          <div class="dropdown d-inline-block">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-regular fa-bell"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="#">اشعارات</a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown d-inline-block">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div class="img-text">
+                <img src="img/nav1.png" class="admin_img" alt="person" />
+                <h4>أمجد عمر الخالدي</h4>
               </div>
-  
-              <div class="info">
-                <div class="notfication">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-  
-                <div class="notfication" onclick="showNotification()">
-                  <i class="fa-regular fa-bell"></i>
-                  <!-- <i class="bi bi-bell"></i> -->
-                  <!-- <span class="alerts"> 1 </span> -->
-                </div>
-                <span>12 مايو 2023 مـ </span>
-                <div class="img">
-                  <img src="img/Avatar.png" alt="" />
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="seting-acount.html"
+                  >اعدادات الحساب
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="General-Settings.html"
+                  >Setting</a
+                >
+              </li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- ======= End navbar ======= -->
+
+      <div class="layout">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-12 col-12 my-lg-0 my-3">
+              <div class="start">
+                <h4>بما تحب ان تبدأ ؟</h4>
+                <div class="rebortss">
+                  <div class="rebort">
+                    <img src="img/rebrt.png" alt="" />
+                    <a href="rebot-son.html"> <h5>تقارير الابن</h5></a>
+                  </div>
+                  <div class="rebort">
+                    <img src="img/rebort2.png" alt="" />
+                    <a href="#"> <h5>واجبات الابن</h5></a>
+                  </div>
+                  <div class="rebort">
+                    <img src="img/rebort3.png" alt="" />
+                    <a href="#"> <h5>الاختبارات</h5></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </nav>
-          <!---------------------- finish nav -------------------------------------------->
+            <div class="col-lg-4 col-md-12 col-12">
+              <div class="start">
+                <!-- sons -->
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab"
+                >
+                  <div class="head-tab-layout">
+                    <h6>الابناء</h6>
+                    <p>عرض الكل</p>
+                  </div>
+                  <div class="old-child old-child-layout">
+                    <div class="child">
+                      <div class="img">
+                        <img src="img/son.png" alt="" />
+                      </div>
+                      <div class="name-clid">
+                        <h5>يوسف أدهم</h5>
+                        <p>يوسف256251</p>
+                      </div>
+                    </div>
+                    <div class="details-child">
+                      <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                  </div>
+                  <div class="old-child old-child-layout">
+                    <div class="child">
+                      <div class="img">
+                        <img src="img/son1.png" alt="" />
+                      </div>
+                      <div class="name-clid">
+                        <h5>أحمد أدهم</h5>
+                        <p>أحمد256251</p>
+                      </div>
+                    </div>
+                    <div class="details-child">
+                      <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                  </div>
+                  <div class="old-child old-child-layout">
+                    <div class="child">
+                      <div class="img">
+                        <img src="img/son2.png" alt="" />
+                      </div>
+                      <div class="name-clid">
+                        <h5>عادل أدهم</h5>
+                        <p>عادل256251</p>
+                      </div>
+                    </div>
+                    <div class="details-child">
+                      <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-md-12 col-12 mt-4">
+              <div class="start">
+                <canvas id="myChart1" class="myChart1"></canvas>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-12 mt-4">
+              <div class="start">
+                <div class="head-tab-layout">
+                  <h6>الواجبات القادمة</h6>
+                  <p>عرض الكل</p>
+                </div>
+                <div class="lesson-homework">
+                  <div class="less">
+                    <h5>حصة لايف على الجزء الأول من سورة البقرة بالتجويد</h5>
+                    <p>أ / أحمد عبدالمنعم</p>
+                  </div>
+                  <div class="lesson-date">
+                    <h5>22</h5>
+                    <p>مايو</p>
+                  </div>
+                </div>
+                <div class="lesson-homework">
+                  <div class="less">
+                    <h5>حصة لايف على الجزء الأول من سورة البقرة بالتجويد</h5>
+                    <p>أ / أحمد عبدالمنعم</p>
+                  </div>
+                  <div class="lesson-date">
+                    <h5>22</h5>
+                    <p>مايو</p>
+                  </div>
+                </div>
+                <div class="lesson-homework">
+                  <div class="less">
+                    <h5>حصة لايف على الجزء الأول من سورة البقرة بالتجويد</h5>
+                    <p>أ / أحمد عبدالمنعم</p>
+                  </div>
+                  <div class="lesson-date">
+                    <h5>22</h5>
+                    <p>مايو</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-4">
+              <div class="start">
+                <h4>تقارير الاختبارات</h4>
+                <div class="canvas">
+                  <canvas id="runningValue" class="canv"></canvas>
+                  <h6>
+                    <span>90</span> <br />
+                    سؤال
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4">
+              <div class="start">
+                <h4>تقارير الحضور و الغياب</h4>
+                <div class="canvas">
+                  <canvas id="myChart2" class="canv"></canvas>
+                  <h6 class="h6">
+                    <span>26</span> <br />
+                    درس
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-12 mt-4">
+              <div class="start">
+                <div class="head-tab-layout">
+                  <h6>الرسائل الواردة</h6>
+                  <p>عرض الكل</p>
+                </div>
+                <div class="all-teachers">
+                  <div class="img-teacher">
+                    <img src="img/message2.png" alt="" />
+                  </div>
+                  <div class="parent-teacher">
+                    <div class="name-teacher">
+                      <div class="teacher">
+                        <h5>الشيخ/ أحمد على</h5>
+                      </div>
+                      <div class="time">
+                        <p>4:57 PM</p>
+                      </div>
+                    </div>
+                    <div class="explain-teacher">
+                      <div class="h6">
+                        <h6>
+                          لاتنسي موعد حضور الحصة المباشرة اليوم <br />
+                          الساعة 12 ظهرا
+                        </h6>
+                      </div>
+                      <div class="p">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="all-teachers">
+                  <div class="img-teacher">
+                    <img src="img/mes.png" alt="" />
+                  </div>
+                  <div class="parent-teacher">
+                    <div class="name-teacher">
+                      <div class="teacher">
+                        <h5>الشيخ/ أحمد على</h5>
+                      </div>
+                      <div class="time">
+                        <p>4:57 PM</p>
+                      </div>
+                    </div>
+                    <div class="explain-teacher">
+                      <div class="h6">
+                        <h6>
+                          لاتنسي موعد حضور الحصة المباشرة اليوم <br />
+                          الساعة 12 ظهرا
+                        </h6>
+                      </div>
+                      <div class="p">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="all-teachers border-0">
+                  <div class="img-teacher">
+                    <img src="img/mes2.png" alt="" />
+                  </div>
+                  <div class="parent-teacher">
+                    <div class="name-teacher">
+                      <div class="teacher">
+                        <h5>الشيخ/ أحمد على</h5>
+                      </div>
+                      <div class="time">
+                        <p>4:57 PM</p>
+                      </div>
+                    </div>
+                    <div class="explain-teacher">
+                      <div class="h6">
+                        <h6>
+                          لاتنسي موعد حضور الحصة المباشرة اليوم <br />
+                          الساعة 12 ظهرا
+                        </h6>
+                      </div>
+                      <div class="p">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="end-page">
+          <div class="container">
+            <div class="made">
+              <p>كل الحقوق محفوظة@شفيعا 2022</p>
+              <p>
+                Made with by <img src="img/hurt.png" alt="" /><a
+                  href="https://crazyideaco.com/"
+                  >Crazy Idea</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="js/main.js"></script>
 
     <!-- counter -->
     <script src="js/counterup.min.js"></script>
     <script src="js/waypoints.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js"></script>
 
-    <script src="js/jquery-3.7.1.min.js"></script>
-        <script src="js/all.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/bootstrap-select.min.js"></script>
-        <script src="js/main.js"></script>
-        // <!-- main js -->
-    
-
+    <!--  -->
     <script>
-
-
-
       $(".counter").counterUp({
         delay: 10,
         time: 3000,
@@ -145,25 +422,143 @@
     </script>
     <!-- counter -->
 
-    <!-- bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- bootstrap -->
+    <!--  -->
+    <script>
+      const total = 55;
+      const complete = 35;
+      const num3 = 20;
+      new Chart("runningValue", {
+        type: "doughnut",
+        data: {
+          datasets: [
+            {
+              data: [total, 80],
+              backgroundColor: ["#8676FF", "#BDB3FF"],
+              // الازرق
+              borderWidth: 3,
+            },
 
+            {
+              data: [total, 20],
+              backgroundColor: ["#FFBA69", "#FFDCB3"],
+              // الاصفر
+              borderWidth: 3,
+            },
+            {
+              data: [complete, 5],
+              backgroundColor: ["#FF708B", "#FFB3C0"],
+              // الاحمر
+              borderWidth: 3,
+            },
+          ],
+        },
+        options: {
+          rotation: -90,
+          circumference: 360,
+          plugins: {
+            legend: {
+              display: false,
+            },
+            tooltip: {
+              enabled: false,
+            },
+          },
+          cutout: "70%",
+        },
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const ctx = document.getElementById("myChart2").getContext("2d");
+        const labels = ["مرات الحضور :24 مرات", "مرات الغياب:2 مرات "];
+        const data = {
+          labels: labels,
+          datasets: [
+            {
+              // label: "My Dataset",
+              data: [12, 19],
+              backgroundColor: [
+                "#FFBA69", // Color for Branch 1
+                "#FF708B", // Color for Branch 2
+              ],
+              borderColor: [
+                "rgba(255, 255, 255, 1)", // Border color for Branch 1
+                "rgba(255, 255, 255, 1)", // Border color for Branch 2
+              ],
+              borderWidth: 2,
+            },
+          ],
+        };
+        const config = {
+          type: "doughnut",
+          data: data,
+          options: {
+            responsive: true,
+            animations: {
+              tension: {
+                duration: 4000,
+                easing: "linear",
+                from: 1,
+                to: 0,
+                loop: true,
+              },
+            },
+            interaction: {
+              intersect: false,
+            },
+            scales: {
+              x: {
+                stacked: false,
+                display: false,
+              },
+              y: {
+                stacked: false,
+                display: false,
+              },
+            },
+          },
+        };
+        const myChart = new Chart(ctx, config);
+      });
+    </script>
     <!--  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-    <!--  -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const ctx1 = document.getElementById("myChart1").getContext("2d");
+        const labels1 = [19, 6, 8, 5, 99, 55, 40];
+        const data1 = {
+          labels: labels1,
+          datasets: [
+            {
+              label: "عدد مرات الحضور ",
+              data: [0, 20, 10, 35, 25, 30, 40],
+              backgroundColor: "#B2D23F",
+              fill: false,
+              borderColor: "#B2D23F",
+              borderWidth: 2,
+            },
+          ],
+        };
+        const config1 = {
+          type: "line",
+          data: data1,
+          options: {
+            responsive: true,
+            animations: {
+              tension: {
+                duration: 4000,
+                easing: "linear",
+                from: 1,
+                to: 0,
+                loop: true,
+              },
+            },
+          },
+        };
+        const myChart1 = new Chart(ctx1, config1);
+      });
+    </script>
   </body>
 </html>

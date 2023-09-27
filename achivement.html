@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ? Main CSS -->
     <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="main-scss/main.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <!-- ? Custom CSS -->
@@ -27,320 +28,385 @@
     <title>تقارير الابن</title>
   </head>
   <body>
-    <!-- =========== ? NavBar =========== -->
-    <nav class="navbar navbar-expand-lg img-nav">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="img/title.png" alt="" /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+    <main class="d-flex sidemobile p-0">
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open">
+        <img src="img/shafia.png" />
+        <div class="menuu menuu-sidebar">
+          <div class="menuMobile">
+            <!-- <i class="fa-solid fa-bars icon-side"></i> -->
+            <!-- <i class="fa-solid fa-x icon-side"></i> -->
+            <i class="fa-solid fa-circle-xmark icon-side"></i>
+          </div>
+        </div>
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
         >
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="col-lg-5">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <!--  ms-auto -->
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >الرئيسية</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#advantge-shafia"> نبذة عنا</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#serves">الأخبار</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#phone"> تواصل معنا</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-2">
-            <div class="shafiaaa">
-              <img class="shafia" src="img/shafia.png" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="left">
-              <i class="fa-regular fa-bell"></i>
+          <li class="nav-item">
+            <a href="layout.html" class="nav-link align-middle">
+              <i class="fa-solid fa-house"></i>
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-video"></i>
+              <span>المقرأة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-people-group"></i>
+              <span>المجموعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-list-check"></i>
+              <span>الانجازات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-file-lines"></i>
+              <span>الاختبارات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>نبذة عنا</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-newspaper"></i>
+              <span>الاخبار</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-regular fa-message"></i>
+              <span>تواصل معنا</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="seting-acount.html" class="nav-link align-middle">
+              <!-- <i class="fa-regular fa-message"></i> -->
+              <i class="fa-solid fa-gear"></i>
+              <span>اعدادات الحساب</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
 
-              <div class="nav-achivement">
-                <img src="img/clup.png" alt="" /> <span>انجازاتي</span>
-              </div>
+      <!-- ======= Main ======= -->
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar lets">
+          <div class="menuu">
+            <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <img src="img/user.png" alt="" /> <span>أحمد أمجد</span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="seting-acount.html"> اعدادات الحساب </a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- =========== ? NavBar =========== -->
-    <div class="parent">
-      <div class="container">
-        <div class="row">
-          <div class="titlt">
-            <a href="#"> <h4>لوحة القيادة</h4></a>
-            <a href="rebot-son.html"><h4>تقارير الابن</h4></a>
-            <a href="#"><h4>واجبات الابن</h4></a>
-            <a href="#"><h4>الاختبارات</h4></a>
-          </div>
-          <h4 class="h4">تقارير الابن / الانجازات</h4>
-          <div class="counter_sec">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 col-12">
-                <div class="note">
-                  <img src="img/note-1.png" alt="" />
-                  <div class="cardachivement">
-                    <h4>اجمالى الواجبات</h4>
-                    <p class="counter" data-target="80">80</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-12">
-                <div class="note">
-                  <img src="img/note-2.png" alt="" />
-                  <div class="cardachivement">
-                    <h4>الواجبات الغير منتهية</h4>
-                    <p class="counter" data-target="20">20</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-12">
-                <div class="note">
-                  <img src="img/note-3.png" alt="" />
-                  <div class="cardachivement">
-                    <h4>الواجبات المنجزة</h4>
-                    <p class="counter" data-target="56">56</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-12">
-                <div class="note">
-                  <img src="img/note-4.png" alt="" />
-                  <div class="cardachivement">
-                    <h4>الواجبات الغير منجزة</h4>
-                    <p class="counter" data-target="04">04</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="parent-tab">
-            <div class="search-achivement">
-              <div class="col-lg-3 col-md-3 col-6">
-                <input
-                  type="date"
-                  class="form-control"
-                  placeholder="First name"
-                />
-              </div>
-              <div class="col-lg-5 col-md-6 col-12">
-                <div class="icon-search">
-                  <input
-                    type="text"
-                    class="form-control pading"
-                    placeholder="ابحث بإسم الحلقة او المعلم ...."
-                  />
-                  <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                </div>
-              </div>
-            </div>
-            <div class="border-Accordion"></div>
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    <div class="img-accordind">
-                      <img src="img/accordind.png" alt="" />
-                    </div>
-                    <div class="explain-accordind">
-                      <h4>
-                        حصة لايف عن أول سورة البقرة من الآية 10 - <br />
-                        20 بالتجويد
-                      </h4>
-                      <p>أ/ أحمد عادل</p>
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <h4>الاجابات الخاطئة</h4>
-                    <div class="num-wrong">
-                      <p class="borderr">1-</p>
-                      <div class="anser-wrong">
-                        <h6>جاءت ( تِلْكَ حُدُودُ اللَّهِ .. ) في أول موضع</h6>
-                        <p class="p">فلا تقربوها</p>
-                        <p class="pp">الاجابة الصحيحة : فلا تعتدوها</p>
-                      </div>
-                    </div>
-                    <div class="num-wrong">
-                      <p>2-</p>
-                      <div class="anser-wrong">
-                        <h6>سورة البقرة تعتبر سورة</h6>
-                        <p class="p">مكية</p>
-                        <p class="pp">الاجابة الصحيحة : مدنية</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="border-Accordion border-0"></div>
-              <div class="accordion-item2">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    <div class="img-accordind">
-                      <img src="img/accordind.png" alt="" />
-                    </div>
-                    <div class="explain-accordind">
-                      <h4>
-                        حصة لايف عن أول سورة البقرة من الآية 10 - <br />
-                        20 بالتجويد
-                      </h4>
-                      <p>أ/ أحمد عادل</p>
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <h4>الاجابات الخاطئة</h4>
-                    <div class="num-wrong">
-                      <p class="borderr">1-</p>
-                      <div class="anser-wrong">
-                        <h6>جاءت ( تِلْكَ حُدُودُ اللَّهِ .. ) في أول موضع</h6>
-                        <p class="p">فلا تقربوها</p>
-                        <p class="pp">الاجابة الصحيحة : فلا تعتدوها</p>
-                      </div>
-                    </div>
-                    <div class="num-wrong">
-                      <p>2-</p>
-                      <div class="anser-wrong">
-                        <h6>سورة البقرة تعتبر سورة</h6>
-                        <p class="p">مكية</p>
-                        <p class="pp">الاجابة الصحيحة : مدنية</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="border-Accordion border-0"></div>
-              <div class="accordion-item3">
-                <h2 class="accordion-header" id="headingThree">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    <div class="img-accordind">
-                      <img src="img/accordind.png" alt="" />
-                    </div>
-                    <div class="explain-accordind">
-                      <h4>
-                        حصة لايف عن أول سورة البقرة من الآية 10 - <br />
-                        20 بالتجويد
-                      </h4>
-                      <p>أ/ أحمد عادل</p>
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <h4>الاجابات الخاطئة</h4>
-                    <div class="num-wrong">
-                      <p class="borderr">1-</p>
-                      <div class="anser-wrong">
-                        <h6>جاءت ( تِلْكَ حُدُودُ اللَّهِ .. ) في أول موضع</h6>
-                        <p class="p">فلا تقربوها</p>
-                        <p class="pp">الاجابة الصحيحة : فلا تعتدوها</p>
-                      </div>
-                    </div>
-                    <div class="num-wrong">
-                      <p>2-</p>
-                      <div class="anser-wrong">
-                        <h6>سورة البقرة تعتبر سورة</h6>
-                        <p class="p">مكية</p>
-                        <p class="pp">الاجابة الصحيحة : مدنية</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="end-page">
-        <div class="container">
-          <div class="made">
-            <p>كل الحقوق محفوظة@شفيعا 2022</p>
-            <p>
-              Made with by <img src="img/hurt.png" alt="" /><a
-                href="https://crazyideaco.com/"
-                >Crazy Idea</a
+          <div class="beell">
+            <div class="dropdown d-inline-block">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-            </p>
+                <i class="fa-regular fa-bell"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="#">اشعارات</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown d-inline-block">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="img-text">
+                  <img src="img/nav1.png" class="admin_img" alt="person" />
+                  <h4>أمجد عمر الخالدي</h4>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="seting-acount.html"
+                    >اعدادات الحساب
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="General-Settings.html"
+                    >Setting</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======= End navbar ======= -->
+
+        <div class="parent">
+          <div class="container">
+            <div class="row">
+              <div class="titlt">
+                <a href="#"> <h4>لوحة القيادة</h4></a>
+                <a href="rebot-son.html"><h4>تقارير الابن</h4></a>
+                <a href="#"><h4>واجبات الابن</h4></a>
+                <a href="#"><h4>الاختبارات</h4></a>
+              </div>
+              <h4 class="h4">تقارير الابن / الانجازات</h4>
+              <div class="counter_sec">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-12">
+                    <div class="note">
+                      <img src="img/note-1.png" alt="" />
+                      <div class="cardachivement">
+                        <h4>اجمالى الواجبات</h4>
+                        <p class="counter" data-target="80">80</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                    <div class="note">
+                      <img src="img/note-2.png" alt="" />
+                      <div class="cardachivement">
+                        <h4>الواجبات الغير منتهية</h4>
+                        <p class="counter" data-target="20">20</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                    <div class="note">
+                      <img src="img/note-3.png" alt="" />
+                      <div class="cardachivement">
+                        <h4>الواجبات المنجزة</h4>
+                        <p class="counter" data-target="56">56</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                    <div class="note">
+                      <img src="img/note-4.png" alt="" />
+                      <div class="cardachivement">
+                        <h4>الواجبات الغير منجزة</h4>
+                        <p class="counter" data-target="04">04</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="parent-tab">
+                <div class="search-achivement">
+                  <div class="col-lg-3 col-md-3 col-6">
+                    <input
+                      type="date"
+                      class="form-control"
+                      placeholder="First name"
+                    />
+                  </div>
+                  <div class="col-lg-5 col-md-6 col-12">
+                    <div class="icon-search">
+                      <input
+                        type="text"
+                        class="form-control pading"
+                        placeholder="ابحث بإسم الحلقة او المعلم ...."
+                      />
+                      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-Accordion"></div>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <div class="img-accordind">
+                          <img src="img/accordind.png" alt="" />
+                        </div>
+                        <div class="explain-accordind">
+                          <h4>
+                            حصة لايف عن أول سورة البقرة من الآية 10 - <br />
+                            20 بالتجويد
+                          </h4>
+                          <p>أ/ أحمد عادل</p>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <h4>الاجابات الخاطئة</h4>
+                        <div class="num-wrong">
+                          <p class="borderr">1-</p>
+                          <div class="anser-wrong">
+                            <h6>
+                              جاءت ( تِلْكَ حُدُودُ اللَّهِ .. ) في أول موضع
+                            </h6>
+                            <p class="p">فلا تقربوها</p>
+                            <p class="pp">الاجابة الصحيحة : فلا تعتدوها</p>
+                          </div>
+                        </div>
+                        <div class="num-wrong">
+                          <p>2-</p>
+                          <div class="anser-wrong">
+                            <h6>سورة البقرة تعتبر سورة</h6>
+                            <p class="p">مكية</p>
+                            <p class="pp">الاجابة الصحيحة : مدنية</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border-Accordion border-0"></div>
+                  <div class="accordion-item2">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        <div class="img-accordind">
+                          <img src="img/accordind.png" alt="" />
+                        </div>
+                        <div class="explain-accordind">
+                          <h4>
+                            حصة لايف عن أول سورة البقرة من الآية 10 - <br />
+                            20 بالتجويد
+                          </h4>
+                          <p>أ/ أحمد عادل</p>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <h4>الاجابات الخاطئة</h4>
+                        <div class="num-wrong">
+                          <p class="borderr">1-</p>
+                          <div class="anser-wrong">
+                            <h6>
+                              جاءت ( تِلْكَ حُدُودُ اللَّهِ .. ) في أول موضع
+                            </h6>
+                            <p class="p">فلا تقربوها</p>
+                            <p class="pp">الاجابة الصحيحة : فلا تعتدوها</p>
+                          </div>
+                        </div>
+                        <div class="num-wrong">
+                          <p>2-</p>
+                          <div class="anser-wrong">
+                            <h6>سورة البقرة تعتبر سورة</h6>
+                            <p class="p">مكية</p>
+                            <p class="pp">الاجابة الصحيحة : مدنية</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border-Accordion border-0"></div>
+                  <div class="accordion-item3">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        <div class="img-accordind">
+                          <img src="img/accordind.png" alt="" />
+                        </div>
+                        <div class="explain-accordind">
+                          <h4>
+                            حصة لايف عن أول سورة البقرة من الآية 10 - <br />
+                            20 بالتجويد
+                          </h4>
+                          <p>أ/ أحمد عادل</p>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <h4>الاجابات الخاطئة</h4>
+                        <div class="num-wrong">
+                          <p class="borderr">1-</p>
+                          <div class="anser-wrong">
+                            <h6>
+                              جاءت ( تِلْكَ حُدُودُ اللَّهِ .. ) في أول موضع
+                            </h6>
+                            <p class="p">فلا تقربوها</p>
+                            <p class="pp">الاجابة الصحيحة : فلا تعتدوها</p>
+                          </div>
+                        </div>
+                        <div class="num-wrong">
+                          <p>2-</p>
+                          <div class="anser-wrong">
+                            <h6>سورة البقرة تعتبر سورة</h6>
+                            <p class="p">مكية</p>
+                            <p class="pp">الاجابة الصحيحة : مدنية</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="end-page">
+            <div class="container">
+              <div class="made">
+                <p>كل الحقوق محفوظة@شفيعا 2022</p>
+                <p>
+                  Made with by <img src="img/hurt.png" alt="" /><a
+                    href="https://crazyideaco.com/"
+                    >Crazy Idea</a
+                  >
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-
+      </section>
+    </main>
     <script src="js/main.js"></script>
 
     <!-- counter -->

@@ -1357,7 +1357,7 @@ table tbody td {
   color: #8c8c8c;
 }
 .parent .border-Accordion {
-  border-top: 1px solid #8c8c8c;
+  border-top: 1px solid #8c8c8c1f;
   margin: 1rem 0;
 }
 .parent.accordion {
@@ -1467,6 +1467,13 @@ table tbody td {
   height: 90px;
   bottom: -25px;
   right: 3px;
+}
+a.chlidern{
+  text-decoration: none;
+  color: black;
+}
+.old-child-layout:hover {
+background-color: #00ad7f23;
 }
 @media (max-width: 992px) {
   input.pading {
@@ -2182,6 +2189,7 @@ display: flex;
 }
 .old-child-layout {
   padding: 0.5rem 0.9rem;
+  transition: 0.7s;
 }
 .start .lesson-homework {
   border: 1px solid #dddddd;

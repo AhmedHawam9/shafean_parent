@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="main-scss/main.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/daterangepicker.css" />
+    <link rel="stylesheet" href="css/nasra.css" />
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="js/daterangepicker.min.js"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+    <!-- ? Custom JavaScript -->
+
+    <title>layout</title>
+  </head>
+  <body>
+    <!---------------------- finish loader -------------------------------------------->
+
+    <!-- <main class="d-flex sidemobile p-0"> -->
+
+    <!-- ======= Start Sidebar ======= -->
+    <section class="sidebar open">
+      
+      <div class="menuu menuu-sidebar">
+        <div class="menuMobile">
+          <!-- <i class="fa-solid fa-bars icon-side"></i> -->
+          <!-- <i class="fa-solid fa-x icon-side"></i> -->
+          <i class="fa-solid fa-circle-xmark icon-side"></i>
+        </div>
+      </div>
+      <ul
+        class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+        id="menu"
+      >
+      <li class="nav-item">
+        <img src="img/shafia.png" />
+      </li>
+        <li class="nav-item">
+          <a href="layout.html" class="nav-link align-middle">
+            <i class="fa-solid fa-house"></i>
+            <span>الرئيسية</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="Electronic-reader.html" class="nav-link align-middle">
+            <i class="fa-solid fa-video"></i>
+            <span>المقرأة</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link align-middle">
+            <i class="fa-solid fa-people-group"></i>
+            <span>المجموعات</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link align-middle">
+            <i class="fa-solid fa-list-check"></i>
+            <span>الانجازات</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link align-middle">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>الاختبارات</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link align-middle">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>نبذة عنا</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link align-middle">
+            <i class="fa-solid fa-newspaper"></i>
+            <span>الاخبار</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link align-middle">
+            <i class="fa-regular fa-message"></i>
+            <span>تواصل معنا</span>
+          </a>
+        </li>
+         <li class="nav-item">
+          <a href="academic-reports.html" class="nav-link align-middle">
+            <i class="fa-regular fa-message"></i>
+            <span>التقارير الاكاديمية </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="table-homework.html" class="nav-link align-middle">
+            <i class="fa-regular fa-message"></i>
+            <span>تقارير الحضور </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="testing.html" class="nav-link align-middle">
+            <i class="fa-regular fa-message"></i>
+            <span>تقارير الاختبارات </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="Competition-reports.html" class="nav-link align-middle">
+            <i class="fa-regular fa-message"></i>
+            <span>تقارير المسابقات</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="Behavioral-reports.html" class="nav-link align-middle">
+            <i class="fa-regular fa-message"></i>
+            <span>التقارير السلوكية للإبن</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="seting-acount.html" class="nav-link align-middle">
+            <!-- <i class="fa-regular fa-message"></i> -->
+            <i class="fa-solid fa-gear"></i>
+            <span>اعدادات الحساب</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- ======= end Sidebar ======= -->
+
+    <!-- ======= Main ======= -->
+    <section class="index_cards">
+      <!-- ======= Start navbar ======= -->
+      <nav class="navbar lets">
+        <div class="menuu">
+          <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="beell">
+          <div class="dropdown d-inline-block">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-regular fa-bell"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="#">اشعارات</a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown d-inline-block">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div class="img-text">
+                <img src="img/nav1.png" class="admin_img" alt="person" />
+                <h4>أمجد عمر الخالدي</h4>
+              </div>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="seting-acount.html"
+                  >يوسف أدهم
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="seting-acount.html"
+                  >أحمد أدهم
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="seting-acount.html"
+                  >عادل أدهم
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="General-Settings.html"
+                  >اضافة ابن جديد</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="seting-acount.html"
+                  >اعدادات الحساب
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="General-Settings.html"
+                  >Setting</a
+                >
+              </li>
+             
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- ======= End navbar ======= -->
+
+      <div class="layout">
+        <div class="container">
+            <div class="head-name">تقارير الأكاديميه/للابن</div>
+            <div class="table_details">
+              <!-- Start filters -->
+              <div class="filters">
+                <div class="form-group">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                      type="search"
+                      name=""
+                      id=""
+                      class="form-control"
+                      placeholder="ابحث باسم الواجب, الطالب......."
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input type="date" class="form-control">
+                  </div>
+
+                <!-- <div class="form-group">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="daterange"
+                    value=""
+                  />
+                  <script>
+                    $(function () {
+                      $('input[name="daterange"]').daterangepicker(
+                        {
+                          opens: "left",
+                        },
+                        function (start, end, label) {
+                          console.log(
+                            "A new date selection was made: " +
+                              start.format("YYYY-MM-DD") +
+                              " to " +
+                              end.format("YYYY-MM-DD")
+                          );
+                        }
+                      );
+                    });
+                  </script>
+                </div> -->
+              </div>
+              <!-- End filters -->
+
+              <div class="table-responsive">
+                <table class="table" id="table">
+                  <thead>
+                    <tr class="trAltCizgi">
+                      <th><input class="box" type="checkbox" /></th>
+                      <th class="th">اسم الطالب</th>
+                      <th class="th">تاريخ اخر تقيم</th>
+                      <th class="th">الدرجه</th>
+                      <th class="th">الدرجه الأجماليه</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tbody">
+                    <!-- For loop this tr -->
+                    <tr>
+                      <td class="th"><input class="box" type="checkbox" /></td>
+                      <td>محمد أحمد</td>
+                      <td>20/11/2024</td>
+                      <td>9/10</td>
+                      <td class="yy">90/100</td>
+                    </tr>
+                    <!-- For loop this tr -->
+
+                    <!-- For loop this tr -->
+                    <tr>
+                      <td class="th"><input class="box" type="checkbox" /></td>
+                      <td>محمد أحمد</td>
+                      <td>20/11/2024</td>
+                      <td>9/10</td>
+                      <td class="yy">90/100</td>
+                    </tr>
+                    <!-- For loop this tr -->
+
+                    <!-- For loop this tr -->
+                    <tr>
+                      <td class="th"><input class="box" type="checkbox" /></td>
+                      <td>محمد أحمد</td>
+                      <td>20/11/2024</td>
+                      <td>9/10</td>
+                      <td class="yy">90/100</td>
+                    </tr>
+                    <!-- For loop this tr -->
+
+                    <!-- For loop this tr -->
+                    <tr>
+                      <td class="th"><input class="box" type="checkbox" /></td>
+                      <td>محمد أحمد</td>
+                      <td>20/11/2024</td>
+                      <td>9/10</td>
+                      <td class="yy">90/100</td>
+                    </tr>
+                    <!-- For loop this tr -->
+                  </tbody>
+                </table>
+              </div>
+              <button type="button" class="btn btn-danger">حذف المحدد</button>
+            </div>
+          </div>
+        <div class="end-page">
+          <div class="container">
+            <div class="made">
+              <p>كل الحقوق محفوظة@شفيعا 2022</p>
+              <p>
+                Made with by <img src="img/hurt.png" alt="" /><a
+                  href="https://crazyideaco.com/"
+                  >Crazy Idea</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <script src="js/main.js"></script>
+
+    <!-- counter -->
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js"></script>
+  </body>
+</html>

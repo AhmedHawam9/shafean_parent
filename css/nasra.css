@@ -796,10 +796,64 @@ a.nav-link.active {
   text-align: center;
 }
 /* sidebar */
+.head-name {
+  font-family: "regular";
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  margin-top: 14px;
+}
+.table_details, .index_cards .content .table_data {
+  background-color: #fff;
+  border: 1px solid #ebeaed;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 100%;
+}
+.table_details .filters, .index_cards .content .table_data .filters {
+  display: flex;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+ .filters .form-group input, .index_cards .content .table_data .filters .form-group input {
+  font-family: "regular";
+  color: #828c8d;
+  font-size: .8rem;
+  padding: 0.75rem;
+  padding-inline-start: 2rem;
+  background-color: rgba(143,146,161,.05);
+  border: 0;
+}
+.filters .form-group:first-child, .index_cards .content .table_data .filters .form-group:first-child {
+  width: 70%;
+}
+.filters .form-group, .index_cards .content .table_data .filters .form-group {
+  width: 30%;
+}
+.filters .form-group svg, .index_cards .content .table_data .filters .form-group svg {
+  position: absolute;
+  top: 51%;
+  right: 0.5rem;
+  color: #828c8d;
+}
+button.btn.btn-danger {
+  display: block;
+  margin-inline-start: auto;
+  font-family: "regular";
+  transition: .7s;
+}
+button.btn.btn-danger:hover {
+  background-color: #fff;
+  border: 1px solid red;
+  color: red;
+}
 
 /* responsev */
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 3000px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 2216px !important;
 }
+}
+
 @media only screen and (max-width: 992px) {
   .regaster {
     padding: 1rem 1rem;
@@ -962,6 +1016,7 @@ a.nav-link.active {
 .parent {
   background-color: #f7f7f7;
   padding: 1rem;
+  height: 100vh;
 }
 .parent .titlt {
   display: flex;
@@ -973,6 +1028,15 @@ a.nav-link.active {
   text-align: center;
   padding: 0;
   width: 100%;
+}
+select.form-select {
+  background-color: #f9f9fa;
+  margin: auto;
+  margin-top: 19px;
+  width: 30%;
+  margin-left: 1rem;
+  font-family: "regular";
+  font-size: 0.9rem;
 }
 /* @media (max-width: 800px) {
   .parent .titlt {

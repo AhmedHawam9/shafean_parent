@@ -1038,14 +1038,95 @@ select.form-select {
   font-family: "regular";
   font-size: 0.9rem;
 }
-/* @media (max-width: 800px) {
-  .parent .titlt {
-    flex-direction: column;
-    align-items: stretch;
-    margin: 0;
-  }
-} */
+.crad-lesson {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: white;
+  padding: 1rem 1rem;
+  border-radius: 24px;
+  gap: 12px;
+}
+.crad-lesson-1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: white;
+  padding: 1rem 1rem;
+  border-radius: 24px;
+  gap: 12px;
+}
+.text-card-lesson p {
+  font-family: "regular";
+  font-size: 0.7rem;
+  background-color: #b2d23f42;
+  width: fit-content;
+  color: #B2D23F;
+  padding: 0.2rem;
+  border-radius: 6px;
+}
+.text-card-lesson h4 {
+  font-size: 0.8rem;
+  font-family: "regular";
+}
+.lesson-last-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.lesson-last-1-card {
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+  gap: 10px;
+}
+.lesson-last-card h3 {
+  font-size: 0.8rem;
+  font-family: "regular";
+  color: #656565;
+}
+.lesson-last-1-card h6 {
+  font-size: 0.8rem;
+  font-family: "regular";
+  color: #656565;
+}
+.lesson-last-card img {
+  width: 6%;
+}
+.las svg {
+  color: #8C8C8C;
+  font-size: 1.2rem !important;
+}
+.low-lesson {
+  margin-top: 58px;
+}
+.lesson {
+  padding: 3rem;
+  height: 100vh;
+}
+p.group {
+  color: white;
+  background-color: red;
+}
+h4.head-son {
+  font-family: 'regular';
+  margin-top: 16px;
+}
+.mib {
+  height: 100vh;
+}
 @media (max-width: 600px) {
+  .crad-lesson-1 {
+    margin-top: 10px;
+  }
+  .lesson {
+    padding: unset;
+    height: 100vh;
+}
+  .low-lesson {
+    margin-top: 10px;
+}
   .parent .titlt {
     flex-direction: column;
     align-items: stretch;

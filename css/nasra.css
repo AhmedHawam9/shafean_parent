@@ -1116,6 +1116,13 @@ h4.head-son {
 .mib {
   height: 100vh;
 }
+img.logo-shafeen {
+  width: 112px;
+  height: 72px;
+}
+.text-footer p {
+  margin-bottom: 0 !important;
+}
 @media (max-width: 600px) {
   .crad-lesson-1 {
     margin-top: 10px;

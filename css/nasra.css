@@ -1267,19 +1267,33 @@ img.logo-shafeen {
 }
 /*.parent  */
 .end-page {
-  background-image: url(../img/end.png);
-  margin-top: 2rem;
+  background-color: #eceae7;
+  padding: 0.5rem;
+  position: fixed;
+  bottom: -10px;
+  width: calc(100% - 15%);
 }
-.end-page .made {
-  font-family: "regular";
-  font-size: 14px;
+.text-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 0.5rem;
 }
-.end-page .made a {
-  color: black;
+.text-footer p {
+  font-family: "bold";
+  margin-bottom: 0;
+}
+.text-footer a {
+  color: #000;
   text-decoration: none;
+}
+.alltet {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.alltet img {
+  width: 6%;
 }
 .parent .h4 {
   font-family: "regular";
@@ -2581,6 +2595,19 @@ display: flex;
     max-height: 280px !important;
     margin: 0 auto;
   }
+}
+.end-page {
+  width: 100%;
+  position: relative;
+}
+.text-footer {
+  flex-wrap: wrap;
+}
+.alltet {
+  flex-wrap: wrap;
+}
+.alltet img {
+  width: 19%;
 }
 /* .myChart1 {
   max-height: 250px !important;

@@ -38,7 +38,6 @@
 
     <!-- ======= Start Sidebar ======= -->
     <section class="sidebar open">
-      
       <div class="menuu menuu-sidebar">
         <div class="menuMobile">
           <!-- <i class="fa-solid fa-bars icon-side"></i> -->
@@ -50,9 +49,9 @@
         class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
         id="menu"
       >
-      <li class="nav-item">
-        <img src="img/shafia.png" />
-      </li>
+        <li class="nav-item">
+          <img src="img/shafia.png" />
+        </li>
         <li class="nav-item">
           <a href="layout.html" class="nav-link align-middle">
             <i class="fa-solid fa-house"></i>
@@ -65,14 +64,14 @@
             <span>المقرأة</span>
           </a>
         </li>
-      
+
         <li class="nav-item">
           <a href="achivement.html" class="nav-link align-middle">
             <i class="fa-solid fa-list-check"></i>
             <span>الانجازات</span>
           </a>
         </li>
-       
+
         <li class="nav-item">
           <a href="#" class="nav-link align-middle">
             <i class="fa-solid fa-circle-exclamation"></i>
@@ -93,14 +92,15 @@
         </li>
         <li class="nav-item">
           <a
-            href="https://ahmedhawam9.github.io/sheafen_web/" target="_blank"
+            href="https://ahmedhawam9.github.io/sheafen_web/"
+            target="_blank"
             class="nav-link align-middle"
           >
             <i class="fa-solid fa-globe"></i>
             <span>الموقع الالكتروني</span>
           </a>
         </li>
-         <li class="nav-item">
+        <li class="nav-item">
           <a href="academic-reports.html" class="nav-link align-middle">
             <i class="fa-brands fa-stack-exchange"></i>
             <span>التقارير الاكاديمية </span>
@@ -212,7 +212,7 @@
                   >Setting</a
                 >
               </li>
-             
+
               <li><a class="dropdown-item" href="#">Logout</a></li>
             </ul>
           </div>
@@ -221,13 +221,13 @@
       <!-- ======= End navbar ======= -->
 
       <div class="layout">
-      <div class="mib">
-        <div class="container">
-          <div class="head-name">تقارير الأكاديميه/للابن</div>
-          <div class="table_details">
-            <!-- Start filters -->
-            <div class="filters">
-              <div class="form-group">
+        <div class="mib">
+          <div class="container">
+            <div class="head-name">تقارير الأكاديميه/للابن</div>
+            <div class="table_details">
+              <!-- Start filters -->
+              <div class="filters">
+                <div class="form-group">
                   <i class="fa-solid fa-magnifying-glass"></i>
                   <input
                     type="search"
@@ -238,10 +238,10 @@
                   />
                 </div>
                 <div class="form-group">
-                  <input type="date" class="form-control">
+                  <input type="date" class="form-control" />
                 </div>
 
-              <!-- <div class="form-group">
+                <!-- <div class="form-group">
                 <i class="fa-solid fa-calendar-days"></i>
                 <input
                   type="text"
@@ -267,90 +267,94 @@
                   });
                 </script>
               </div> -->
+              </div>
+              <!-- End filters -->
+
+              <div class="table-responsive">
+                <table class="table" id="table">
+                  <thead>
+                    <tr class="trAltCizgi">
+                      <th><input class="box" type="checkbox" /></th>
+                      <th class="th">اسم الطالب</th>
+                      <th class="th">تاريخ اخر تقيم</th>
+                      <th class="th">الدرجه</th>
+                      <th class="th">الدرجه الأجماليه</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tbody">
+                    <!-- For loop this tr -->
+                    <tr>
+                      <td class="th"><input class="box" type="checkbox" /></td>
+                      <td>محمد أحمد</td>
+                      <td>20/11/2024</td>
+                      <td>9/10</td>
+                      <td class="yy">90/100</td>
+                    </tr>
+                    <!-- For loop this tr -->
+
+                    <!-- For loop this tr -->
+                    <tr>
+                      <td class="th"><input class="box" type="checkbox" /></td>
+                      <td>محمد أحمد</td>
+                      <td>20/11/2024</td>
+                      <td>9/10</td>
+                      <td class="yy">90/100</td>
+                    </tr>
+                    <!-- For loop this tr -->
+
+                    <!-- For loop this tr -->
+                    <tr>
+                      <td class="th"><input class="box" type="checkbox" /></td>
+                      <td>محمد أحمد</td>
+                      <td>20/11/2024</td>
+                      <td>9/10</td>
+                      <td class="yy">90/100</td>
+                    </tr>
+                    <!-- For loop this tr -->
+
+                    <!-- For loop this tr -->
+                    <tr>
+                      <td class="th"><input class="box" type="checkbox" /></td>
+                      <td>محمد أحمد</td>
+                      <td>20/11/2024</td>
+                      <td>9/10</td>
+                      <td class="yy">90/100</td>
+                    </tr>
+                    <!-- For loop this tr -->
+                  </tbody>
+                </table>
+              </div>
+              <button type="button" class="btn btn-danger">حذف المحدد</button>
             </div>
-            <!-- End filters -->
-
-            <div class="table-responsive">
-              <table class="table" id="table">
-                <thead>
-                  <tr class="trAltCizgi">
-                    <th><input class="box" type="checkbox" /></th>
-                    <th class="th">اسم الطالب</th>
-                    <th class="th">تاريخ اخر تقيم</th>
-                    <th class="th">الدرجه</th>
-                    <th class="th">الدرجه الأجماليه</th>
-                  </tr>
-                </thead>
-                <tbody class="tbody">
-                  <!-- For loop this tr -->
-                  <tr>
-                    <td class="th"><input class="box" type="checkbox" /></td>
-                    <td>محمد أحمد</td>
-                    <td>20/11/2024</td>
-                    <td>9/10</td>
-                    <td class="yy">90/100</td>
-                  </tr>
-                  <!-- For loop this tr -->
-
-                  <!-- For loop this tr -->
-                  <tr>
-                    <td class="th"><input class="box" type="checkbox" /></td>
-                    <td>محمد أحمد</td>
-                    <td>20/11/2024</td>
-                    <td>9/10</td>
-                    <td class="yy">90/100</td>
-                  </tr>
-                  <!-- For loop this tr -->
-
-                  <!-- For loop this tr -->
-                  <tr>
-                    <td class="th"><input class="box" type="checkbox" /></td>
-                    <td>محمد أحمد</td>
-                    <td>20/11/2024</td>
-                    <td>9/10</td>
-                    <td class="yy">90/100</td>
-                  </tr>
-                  <!-- For loop this tr -->
-
-                  <!-- For loop this tr -->
-                  <tr>
-                    <td class="th"><input class="box" type="checkbox" /></td>
-                    <td>محمد أحمد</td>
-                    <td>20/11/2024</td>
-                    <td>9/10</td>
-                    <td class="yy">90/100</td>
-                  </tr>
-                  <!-- For loop this tr -->
-                </tbody>
-              </table>
-            </div>
-            <button type="button" class="btn btn-danger">حذف المحدد</button>
           </div>
         </div>
-      </div>
-       <!--start footer -->
-       <div class="end-page">
-        <div class="made">
-          <div class="text-footer">
-            <div class="alltet">
-              <p>كل الحقوق محفوظة@شفيعا 2022</p>
-              <p>بدعم من اوقاف الضحيان</p>
-              <img src="img/شعار_اوقاف_الضحيان-removebg-preview.png" alt="" />
-            </div>
+        <!--start footer -->
+        <div class="end-page">
+          <div class="made">
+            <div class="text-footer">
+              <div class="alltet">
+                <p>كل الحقوق محفوظة@شفيعا 2022</p>
+                <div class="slogn">
+                  <p>بدعم من اوقاف الضحيان</p>
+                  <img
+                    src="img/شعار_اوقاف_الضحيان-removebg-preview.png"
+                    alt=""
+                  />
+                </div>
+              </div>
 
-            <p>
-              Made with by <img src="mida/hurt.png" alt="" /><a
-                href="https://crazyideaco.com/"
-                >Crazy Idea</a
-              >
-            </p>
+              <p>
+                Made with by <img src="mida/hurt.png" alt="" /><a
+                  href="https://crazyideaco.com/"
+                  >Crazy Idea</a
+                >
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <!--end footer -->
+        <!--end footer -->
       </div>
     </section>
-    
 
     <script src="js/main.js"></script>
 

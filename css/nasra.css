@@ -1268,9 +1268,9 @@ img.logo-shafeen {
 /*.parent  */
 .end-page {
   background-color: white;
-  padding: 0.5rem;
+  padding: 1rem;
   position: fixed;
-  bottom: -10px;
+  bottom: 0;
   width: calc(100% - 15%);
 }
 .text-footer {
@@ -1291,10 +1291,19 @@ img.logo-shafeen {
   display: flex;
   align-items: center;
   gap: 20px;
+  width: 65%;
 }
 .alltet img {
   width: 6%;
 }
+.slogn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
 .parent .h4 {
   font-family: "regular";
   margin: 2rem 0;
@@ -2297,6 +2306,7 @@ display: flex;
 /* layout */
 .layout {
   background-color: #f7f7f7;
+  margin-bottom: 74px;
 }
 .layout .start {
   background-color: white;
@@ -2551,6 +2561,16 @@ display: flex;
     margin-inline-start: 0%;
     transition: 1s ease-in-out;
   }
+  .alltet {
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+  }
+  .end-page{
+    width: 100%;
+  }
+  .alltet img {
+    width: 10%;
+  }
  
 }
 
@@ -2604,10 +2624,23 @@ display: flex;
   flex-wrap: wrap;
 }
 .alltet {
-  flex-wrap: wrap;
+  display: block;
+  gap: unset;
+}
+.alltet p {
+  font-size: 0.7rem;
 }
 .alltet img {
   width: 19%;
+}
+.text-footer p {
+  font-size: 0.7rem;
+}
+.layout {
+  margin-bottom: unset;
+}
+.slogn {
+  gap: unset;
 }
 /* .myChart1 {
   max-height: 250px !important;
